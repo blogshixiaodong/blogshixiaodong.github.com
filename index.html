@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheets/core.css" media="screen">
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
     <link rel="stylesheet" href="stylesheets/github-light.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -16,14 +16,14 @@
     <script type="text/javascript">
       
       window.onload=function(){
-			var panel=document.querySelectorAll('.panel');
-			//alert(panel.style.borderColor);
-			for(var i=0;i<panel.length;i++){
-				panel[i].style.boxShadow="0 0 10px "+getComputedStyle(panel[i],false).borderColor;
-			}
-		
+		var panel=document.querySelectorAll('.panel');
+		//alert(panel.style.borderColor);
+		for(var i=0;i<panel.length;i++){
+			panel[i].style.boxShadow="0 0 10px "+getComputedStyle(panel[i],false).borderColor;
 		}
+     }
     </script>
+	  
     <title>My Web</title>
   </head>
 
@@ -52,10 +52,10 @@
 				<a href="#">show all</a>
 			</p>
 		</div>
-	</div>
+     </div>
     
     <script src="javascripts/jquery.min.js"></script>
-	  <script src="javascripts/bootstrap.js"></script>
+    <script src="javascripts/bootstrap..min.js"></script>
     
   </body>
 </html>
