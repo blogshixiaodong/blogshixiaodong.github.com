@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
+<head>
+	<title>Demo</title>
+	<meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
-    
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      
-      window.onload=function(){
-		var panel=document.querySelectorAll('.panel');
-		//alert(panel.style.borderColor);
-		for(var i=0;i<panel.length;i++){
-			panel[i].style.boxShadow="0 0 10px "+getComputedStyle(panel[i],false).borderColor;
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<script>
+		
+		window.onload=function(){
+			var panel=document.querySelectorAll('.panel');
+			for(var i=0;i<panel.length;i++){
+				panel[i].style.boxShadow="0 0 10px "+getComputedStyle(panel[i],false).borderColor;
+			}
+		
 		}
-     }
-    </script>
-	  
-    <title>My Web</title>
-  </head>
+	</script>
+	<style>
+		.navbar{
+			margin-top: 20px; 
+		}
+		.nav li >a{
+			/*padding: 15px;*/
+		}
+		.nav-pills{
+			height: 40px;
+		}
+		ul{
+			margin-bottom: 0;
+		}
+		.pull-right span{
+			top: 2px;
+		}
+		
 
-  <body>
-   <div class="panel panel-danger">
+
+	</style>
+</head>
+
+<body>
+	<!--nav-->
+	<div class="container">
+		<nav class="navbar navbar-default" role="navigation">
+			<ul class="nav nav-pills">
+				<li class="active"><a href="#">HOME</a></li>
+				<li><a href="#">PROBLEM</a></li>
+				<li><a href="#">STATUS</a></li>
+				<li><a href="#">CONTEST</a></li>
+				<li><a href="#">RANK</a></li>
+				<li><a href="#">DISCUSS</a></li>
+				<li><a href="#">CHALLENGE</a></li>
+				<li class="pull-right"><a href="#">Register</a></li>
+				<li class="pull-right">
+					<a href="#">		
+						<span class="glyphicon glyphicon-log-in"></span>
+						Login
+					</a>
+				</li>
+				
+			</ul>
+		</nav>
+	</div>
+	<!-- panel -->
+	<div class="panel panel-danger">
 		<div class="panel-heading">
 			<div class="panel-title">
 				2016级ACM集训队入队标准
@@ -52,10 +87,8 @@
 				<a href="#">show all</a>
 			</p>
 		</div>
-     </div>
-    
-    <script src="javascripts/jquery.min.js"></script>
-    <script src="javascripts/bootstrap..min.js"></script>
-    
-  </body>
+	</div>
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/bootstrap.min.js"></script>
+</body>
 </html>
