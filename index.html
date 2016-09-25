@@ -2,11 +2,9 @@
 <html>
 <head>
 	<title>Demo</title>
-	<meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+	
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+	<link rel="stylesheet" href="stylesheets/bootstrap.css">
 	<script>
 		
 		window.onload=function(){
@@ -47,47 +45,68 @@
 				<li class="active"><a href="#">HOME</a></li>
 				<li><a href="#">PROBLEM</a></li>
 				<li><a href="#">STATUS</a></li>
-				<li><a href="#">CONTEST</a></li>
-				<li><a href="#">RANK</a></li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						CONTEST
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="dropdown">
+						<li><a href="#">练习</a></li>
+						<li><a href="#">积分</a></li>
+						<li><a href="#">趣味</a></li>
+						<li><a href="#">正式</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+						RANK
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu" role="dropdown">
+						<li><a href="#">荣誉榜</a></li>
+						<li><a href="#">活跃榜</a></li>
+					</ul>
+				</li>
 				<li><a href="#">DISCUSS</a></li>
 				<li><a href="#">CHALLENGE</a></li>
 				<li class="pull-right"><a href="#">Register</a></li>
 				<li class="pull-right">
 					<a href="#">		
-						<span class="glyphicon glyphicon-log-in"></span>
+						<span class="glyphicon glyphicon-log-out"></span>
 						Login
 					</a>
 				</li>
 				
 			</ul>
 		</nav>
-	</div>
-	<!-- panel -->
-	<div class="panel panel-danger">
-		<div class="panel-heading">
-			<div class="panel-title">
-				2016级ACM集训队入队标准
-				<front style="float:right">
-					bulid by 
-					<a href="#" style="color:#000"><b>admin</b></a>
-					at 2015-10-13 00:28 
-					<a href="#"><span class="badge">→</span></a>
-				</front>
+		<!-- panel -->
+		<div class="panel panel-danger">
+			<div class="panel-heading">
+				<div class="panel-title">
+					2016级ACM集训队入队标准
+					<front style="float:right">
+						bulid by 
+						<a href="#" style="color:#000"><b>admin</b></a>
+						at 2015-10-13 00:28 
+						<a href="#"><span class="badge">→</span></a>
+					</front>
+				</div>
+			</div>
+			<div class="panel-body">
+				<p>
+					各位2016级新同学：<br /><br />
+					你是否还在为高考不得志而闷闷不乐?<br /><br />
+					你是否对自己的天赋特别自信（尤其擅长数学）？<br /><br />
+					你是否想体验终极编程的乐趣？<br /><br />
+					你是否想找一群志同道合的朋友一起奋斗？<br /><br />
+					——那么，来加入FJUT ACM集训队吧！<br /><br />
+					（成员面向全校，不限于信息学院，如果你身边有这样的朋友，也请你传递这个信息～）<br /><br />...
+					<a href="#">show all</a>
+				</p>
 			</div>
 		</div>
-		<div class="panel-body">
-			<p>
-				各位2016级新同学：<br /><br />
-				你是否还在为高考不得志而闷闷不乐?<br /><br />
-				你是否对自己的天赋特别自信（尤其擅长数学）？<br /><br />
-				你是否想体验终极编程的乐趣？<br /><br />
-				你是否想找一群志同道合的朋友一起奋斗？<br /><br />
-				——那么，来加入FJUT ACM集训队吧！<br /><br />
-				（成员面向全校，不限于信息学院，如果你身边有这样的朋友，也请你传递这个信息～）<br /><br />...
-				<a href="#">show all</a>
-			</p>
-		</div>
 	</div>
+	
 	<script src="javascripts/jquery.min.js"></script>
 	<script src="javascripts/bootstrap.min.js"></script>
 </body>
