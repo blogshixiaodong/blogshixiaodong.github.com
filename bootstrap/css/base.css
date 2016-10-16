@@ -1,0 +1,100 @@
+/*添加bootstrap颜色定义 */
+.panel-brown {
+  border-color: #CC9966;
+}
+.panel-brown > .panel-heading {
+  color: #fff;
+  background-color: #CC9966;
+  border-color: #CC9966;
+}
+.panel-brown > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #CC9966;
+}
+.panel-brown > .panel-heading .badge {
+  color: #CC9966;
+  background-color: #fff;
+}
+.panel-brown > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #CC9966;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#header .row .navbar {
+	margin: 29px 0 0 0;
+	padding: 0;		
+}
+
+.divide {
+	border: 1px solid green;
+	margin: 5px 0;
+}
+
+#footer {
+	background-image: url(../../img/footer_bg.png);
+	height: 200px;
+	padding: 10px;
+}
+
+#footer p {
+	font-size: 15px;
+	color: #777;
+}
+
+#footer .row p{
+	margin: 30px 10px;
+}
+
+#footer .list-group li {
+	margin-left: 20px;
+	list-style: none;
+	float: left;
+	color: darkgray;
+}
+
+#footer .list-group li a {
+	color: darkgray;
+}
+
+#footer .list-group li a:hover {
+	color: dodgerblue;
+}
+
+#footer .share ul {
+	margin-top: 30px;	
+}
+
+#footer .share li {
+	list-style: none;
+	float: left;
+	margin: 0 30px;
+	width: 30px;
+	
+}
+
+#footer .share li a{
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: 21px;
+	text-decoration: none;
+	color: #777;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+#footer .share ul li:nth-child(5) a {
+	width: 50px;
+	height: 50px;
+	margin: 30px 0 0 100px;
+}
+
+#footer .share ul li:nth-child(6) a{
+	width: 50px;
+	height: 50px;
+	margin: 30px 0 0 100px;
+}
+
