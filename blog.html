@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BLOG</title>
+		<script src="bootstrap/js/jquery.min.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/blog.css"/>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<div id="header" class="container">
+				<div class="row">
+					<div id="logo" class="col-sm-3">
+						<img src="img/logo.png" alt="logo" />
+					</div>
+					<nav class="navbar navbar-default col-sm-9" role="navigation">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">HOME</a></li>
+							<li><a href="#">PROBLEM</a></li>
+							<li><a href="#">BLOG</a></li>
+							<li><a href="#">LOGIN</a></li>
+							<li><a href="form.html">REGISTER</a></li>
+						</ul>
+						<form class="navbar-form pull-right" role="search">
+				         	<div class="form-group">
+				            	<input type="text" class="form-control" placeholder="Search">
+				         	</div>
+				         	<button type="submit" class="btn btn-default">提交</button>
+			      		</form>	  
+					</nav>
+				</div>
+	
+			</div>
+			<!--html head end!-->
+			<div class="divide"></div>
+			<div id="main" class="container">		
+				<div class="row">
+					<div id="user-info" class="col-sm-2">
+						<dl>
+							<dt><a href="#"><img src="img/head-icon.jpg"/></a></dt>
+							<dd><b>7</b>关注</dd>
+							<dd><b>25</b>粉丝</dd>
+						</dl>
+					</div>
+					<div id="user-message" class="col-sm-10">
+						<dl>
+							<dt><h3>随心所欲</h3></dt>
+							<dd><span>计算机科学与技术</span></dd>
+							<dd><span>学生</span></dd>
+							<dd><span>施晓冬</span></dd>
+							<dd><span>中国-福建省-福州市</span></dd>
+							<dd><span>男</span></dd>
+							<dd><span>1996-12-1</span></dd>
+						</dl>
+						<div>
+							<p class="text-info"><small>Nothing is impossible.</small></p>
+							<span class="label label-danger">RANK</span>
+							<span class="label label-info">BLOG 2</span>
+							<span class="label label-success">DOWN 1</span>
+							<span class="label label-primary">CODE 2</span>
+						</div>
+						<a id="write" href="#"></a>
+					</div>
+				</div>
+				<!--head user end!-->
+				<script>
+					$('#user-message').mouseover(function(){
+						$(this).find('a').show();
+					})
+					$('#user-message').mouseout(function(){
+						$(this).find('a').hide();
+					})
+				</script>
+				<div class="row">
+					<div class="col-sm-9">
+						<div class="panel-group">
+							<div class="panel panel-warning">
+								<div class="panel-heading">
+									<div class="panel-title">
+										博客列表
+									</div>
+								</div>
+								<div class="panel-body">
+									<article>
+										<h3><a href="#">jQuery对象  and DOM对象</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">javascript</a></li>
+											<li><a href="#">Code</a></li>
+										</ol>
+										<p>
+											jQuery对象 ---> DOM对象
+											var $div=$("div");         //jQuery对象
+											var div1=$div.get(0);      //DOM对象
+											var div2=$div.get()[0];    //DOM对象
+											var div3=$div[0];	   //DOM对象
+												
+											DOM对象 ---> jQuery对象
+											var div=document.getElementById('box');	//DOM对象
+											var $div=$(div);			//jQuery对象
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+									<article>
+										<h3><a href="#">动态数组(C语言)</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">C语言</a></li>
+											<li><a href="#">Code</a></li>
+										</ol>
+										<p>
+											动态数组是指在声明时没有确定数组大小的数组，即忽略圆括号中的下标；当要用它时，可随时用ReDim语句重新指出数组的大小。
+											使用动态数组的优点是可以根据用户需要，有效利用存储空间。
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+									<article>
+										<h3><a href="#">并查集</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">数据结构</a></li>
+											<li><a href="#">Text</a></li>
+										</ol>
+										<p>
+											在一些有N个元素的集合应用问题中，我们通常是在开始时让每个元素构成一个单元素的集合，然后按一定顺序将属于同一组的元素所在的集合合并，其间要反复查找一个元素在哪个集合中。这一类问题近几年来反复出现在信息学的国际国内赛题中，其特点是看似并不复杂，但数据量极大，若用正常的数据结构来描述的话，往往在空间上过大，计算机无法承受；即使在空间上勉强通过，运行的时间复杂度也极高，根本就不可能在比赛规定的运行时间（1～3秒）内计算出试题需要的结果，只能用并查集来描述。
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+									<article>
+										<h3><a href="#">文件操作</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">C</a></li>
+											<li><a href="#">Text</a></li>
+										</ol>
+										<p>
+											文件的基本概念
+										　　所谓“文件”是指一组相关数据的有序集合。 这个数据集有一个名称，叫做文件名。 实际上在前面的各章中我们已经多次使用了文件，例如源程序文件、目标文件、可执行文件、库文件 (头文件)等。文件通常是驻留在外部介质(如磁盘等)上的， 在使用时才调入内存中来。从不同的角度可对文件作不同的分类。从用户的角度看，文件可分为普通文件和设备文件两种。
+										
+										　　普通文件是指驻留在磁盘或其它外部介质上的一个有序数据集，可以是源文件、目标文件、可执行程序； 也可以是一组待输入处理的原始数据，或者是一组输出的结果。对于源文件、目标文件、可执行程序可以称作程序文件，对输入输出数据可称作数据文件。
+										
+										　　设备文件是指与主机相联的各种外部设备，如显示器、打印机、键盘等。在操作系统中，把外部设备也看作是一个文件来进行管理，把它们的输入、输出等同于对磁盘文件的读和写。通常把显示器定义为标准输出文件， 一般情况下在屏幕上显示有关信息就是向标准输出文件输出。如前面经常使用的printf,putchar 函数就是这类输出。键盘通常被指定标准的输入文件， 从键盘上输入就意味着从标准输入文件上输入数据。scanf,getchar函数就属于这类输入。 
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+									<article>
+										<h3><a href="#">浅谈CSS居中问题</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">CSS</a></li>
+											<li><a href="#">Text</a></li>
+										</ol>
+										<p>
+											居中是我们使用css来布局时常遇到的情况。使用css来进行居中时，有时一个属性就能搞定，有时则需要一定的技巧才能兼容到所有浏览器，本文就居中的一些常用方法做个简单的介绍。注：本文所讲方法除了特别说明外，都是兼容IE6+、谷歌、火狐等主流浏览器的。先来说几种简单的、人畜无害的居中方法	
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+									<article>
+										<h3><a href="#">jQuery入门</a></h3>
+										<ol class="breadcrumb">
+											<li><a href="#">2016/10/1</a></li>
+											<li><a href="#">jQuery</a></li>
+											<li><a href="#">Text</a></li>
+										</ol>
+										<p>
+											jQuery是一套JavaScript脚本库.  在我的博客中可以找到"Javascript轻量级脚本库"系列文章. Javascript脚本库类似于.NET的类库, 我们将一些工具方法或对象方法封装在类库中, 方便用户使用.
+											注意jQuery是脚本库, 而不是脚本框架. "库"不等于"框架", 比如"System程序集"是类库,而"ASP.NET MVC"是框架. jQuery并不能帮助我们解决脚本的引用管理和功能管理,这些都是脚本框架要做的事.
+											脚本库能够帮助我们完成编码逻辑,实现业务功能. 使用jQuery将极大的提高编写javascript代码的效率, 让写出来的代码更加优雅, 更加健壮. 同时网络上丰富的jQuery插件也让我们的工作变成了"有了jQuery,天天喝茶水"--因为我们已经站在巨人的肩膀上了.
+											创建一个ASP.NET MVC项目时, 会发现已经自动引入了jQuery类库. jQuery几乎是微软的御用脚本库了!完美的集成度和智能感知的支持,让.NET和jQuery天衣无缝结合在一起!所以用.NET就要选用jQuery而非Dojo,ExtJS等.
+										</p>
+										<div class="article-manger">
+											<span>阅读</span>
+											<span>评论</span>
+											<span>编辑</span>
+											<span>删除</span>
+											<span>2016-10-15</span>	
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<!--blog left slide end!-->
+					<div class="col-sm-3">
+						
+						<!--aticle-->
+						<div id="aticle" class="panel-group">
+							<div class="panel panel-success">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#aticle-list" data-toggle="collapse"  data-partent="#aticle">文章收藏</a>
+									</h4>
+								</div>
+								<div id="aticle-list" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<ul class="list-group">
+											<li class="list-group-item"><a href="#">js引擎总结笔记</a></li>
+											<li class="list-group-item"><a href="#">JavaScript 模块化入门Ⅰ：理解模块</a></li>
+											<li class="list-group-item"><a href="#">jQuery常用语法总结笔记</a></li>
+											<li class="list-group-item"><a href="#">浅谈CSS居中问题</a></li>
+											<li class="list-group-item"><a href="#">关于Cookie的原理、作用，区别以及使用</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>	
+						</div>
+						
+						<!--Archievs-->
+						<div id="Archievs" class="panel-group">
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#Archievs-list" data-toggle="collapse" data-parent="#Archievs">文章分类</a>
+									</h4>
+								</div>
+								<div id="Archievs-list" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<ul class="list-group">
+											<li class="list-group-item"><a href="#">HTML 5</a></li>
+											<li class="list-group-item"><a href="#">CSS 3</a></li>
+											<li class="list-group-item"><a href="#">JavaScript</a></li>
+											<li class="list-group-item"><a href="#">jQuery</a></li>
+											<li class="list-group-item"><a href="#">BootStrap</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<!--answer-->
+						<div id="answer" class="panel-group">
+							<div class="panel panel-info">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#answer-list" data-toggle="collapse" data-parent="#answer">我的问答</a>
+									</h4>
+								</div>
+								<div id="answer-list" class="panel-collapse collapse in">
+									<div class="panel-body list-group">
+										<div class="ans list-group-item">	
+											<img class="pull-left" style="width: 65px;" src="img/ans-head-icon-01.jpg" alt="icon" />
+											<div style="margin-left: 10px;">
+												<h6 class="media-heading">FireFox 获取非行间样式</p>
+												<small>在火狐浏览器下怎么获取某个div的行间样式呢？在火狐浏览器下怎么获取某个div的行间样式呢？在火狐浏览器下怎么获取某个div的行间样式呢？</small>
+											</div>
+										</div>
+										<div class="ans list-group-item">	
+											<img class="pull-left" style="width: 65px;" src="img/ans-head-icon-02.jpg" alt="icon" />
+											<div style="margin-left: 10px;">
+												<h6 class="media-heading">IE6/7/8</p>
+												<small>现在建站是否还需要兼容IE6/7/8</small>
+											</div>
+										</div>
+										<div class="ans list-group-item">	
+											<img class="pull-left" style="width: 65px;" src="img/ans-head-icon-03.jpg" alt="icon" />
+											<div style="margin-left: 10px;">
+												<h6 class="media-heading">JavaScript和jQuery对象</p>
+												<small>JavaScript对象和jQuery对象有什么不同，他们的方法可以共用吗？两个对象要怎么相互转化呢？</small>
+											</div>
+										</div>
+										<div class="ans list-group-item">	
+											<img class="pull-left" style="width: 65px;" src="img/ans-head-icon-04.jpg" alt="icon" />
+											<div style="margin-left: 10px;">
+												<h6 class="media-heading">动态数组</p>
+												<small>动态数组申请的内存是否需要手动释放呢？</small>
+											</div>
+										</div>
+										<div class="ans list-group-item">	
+											<img class="pull-left" style="width: 65px;" src="img/ans-head-icon-05.jpg" alt="icon" />
+											<div style="margin-left: 10px;">
+												<h6 class="media-heading">HTML</p>
+												<small>学习HTMl需要什么基础？</small>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+								
+						<!--skill-->
+						<div id="commend" class="panel-group">
+							<div class="panel panel-brown">
+								<div class="panel-heading">
+									<h4 class="panel-title">
+										<a href="#commend-list" data-toggle="collapse" data-parent="#commend">Skills</a>
+									</h4>
+								</div>
+								<div id="commend-list" class="panel-collapse collapse in">
+									<div class="panel-body">
+										<ul class="list-group">
+											<li class="list-group-item">
+												<p class="text-info">PhotoShop</p>
+												<div class="progress progress-striped active">
+													<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+													<span class="sr-only">40% 完成</span>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<p class="text-info">JavaScript</p>
+												<div class="progress progress-striped active">
+													<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+													<span class="sr-only">40% 完成</span>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<p class="text-info">Java</p>
+												<div class="progress progress-striped active">
+													<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+													<span class="sr-only">40% 完成</span>
+												</div>
+											</li>
+											<li class="list-group-item">
+												<p class="text-info">C/C++</p>
+												<div class="progress progress-striped active">
+													<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+													<span class="sr-only">40% 完成</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<!--blog right slide end!-->
+				</div>
+			</div>
+			<!--main blog end!-->			
+			<script>
+				/**
+				 * panel border boxShadow
+				 * */
+				$('.panel').each(function(index){
+					if(getComputedStyle(this,false)["borderColor"]){
+						this.style.boxShadow="0 0 10px " + getComputedStyle(this,false).borderColor;
+//						console.log("get "+getComputedStyle(panel[index],false).borderColor);
+					}
+					else if(this.currentStyle["borderColor"]){
+						this.style.boxShadow="0 0 10px " + this.currentStyle["borderColor"];
+//						console.log("current "+panel[index].currentStyle["borderColor"]);
+					}
+				})
+				
+			</script>
+		
+			<div id="footer" class="container-fluid">
+				<div class="row">
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="clearfix">
+							<img class="pull-left" src="img/dark-logo.png" alt="logo"/>
+							<p class="pull-left">Show and tell for designers.</p>
+						</div>
+						<ul class="list-group">
+							<li><a href="#">about |</a></li>
+							<li><a href="#">版权声明 |</a></li>
+							<li><a href="#">建议反馈 |</a></li>
+							<li><a href="#">联系我们 |</a></li>
+							<li><a href="#">帮助 |</a></li>
+						</ul>	
+					</div>
+					<div class="share col-sm-offset-1 col-sm-4">
+						<ul>
+							<li><a href="#" class="share_icon">HELP</a></li>
+							<li><a href="#" class="share_icon">Sitemap</a></li>
+							<li><a href="#" class="share_icon">Email</a></li>
+							<li><a href="#" class="share_icon">Rss</a></li>
+							<li><a href="#" class="share_icon"></a></li>
+							<li><a href="#" class="share_icon"></a></li>
+						</ul>
+					</div>
+				</div>
+				<p class="col-sm-offset-1">
+					Copyright © 2015-2016 blogshixiaodong.github.io  their respective owners. E-mail:1512974937@163.com
+				</p>
+			</div>
+			<script>
+				$('#footer img').mouseover(function(){
+					$(this).attr("src","img/logo.png");
+				})
+				$('#footer img').mouseout(function(){
+					$(this).attr("src","img/dark-logo.png");
+				})
+				
+				
+				$('#footer .share li a').each(function(index){
+					var s='img/share-d0'+(index+1)+'.gif';
+					$(this).css('background',"url("+s+")"+"no-repeat scroll 0 0");
+					$(this).mouseover(function(){
+						var s='img/share-b0'+(index+1)+'.gif';
+						$(this).css('color',"#03a8b1");
+						$(this).css('background',"url("+s+")"+"no-repeat scroll 0 0");
+					})
+					$(this).mouseout(function(){
+						var s='img/share-d0'+(index+1)+'.gif';
+						$(this).css('color',"#777");
+						$(this).css('background',"url("+s+")"+"no-repeat scroll 0 0");
+					})
+				})
+			</script>
+			<!--footer end!-->
+		</div>
+		
+		
+	
+
+	</body>
+</html>
