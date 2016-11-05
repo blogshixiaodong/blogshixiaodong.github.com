@@ -1,0 +1,139 @@
+.panel-group .panel-collapse ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+.panel-group .panel-collapse ul p{
+	list-style: none;
+	padding-left: 0;
+	font-size: 15px;
+}
+
+#main .row:nth-child(1)  {
+	background-color: white;
+	padding: 15px 20px;
+	margin: 20px 0;
+}
+
+#main .row:nth-child(1) dl {
+	width: 150px;
+	height: 200px;
+	float: left;
+	display: block;
+	margin-right: 45px;
+}
+
+#main #user-info dt {
+	width: 150px;
+	height: 160px;
+	margin-bottom: 10px;
+	float: left;
+	display: block;
+}
+
+#main #user-info dd {
+	width: 72px;
+	height: 32px;
+	border-right: 1px solid #f0f0f0;
+	float: left;
+	font-size: 14px;
+	color: #999;
+	text-align: center;
+	overflow: hidden;
+	
+}
+
+#main #user-info dd b {
+	color: #333;
+	display: block;
+	width: 72px;
+	text-align: center;
+	line-height: 14px;
+	float: left;
+}
+
+#main #user-message dl {
+	width: 800px;
+	height: 100px;
+	border-bottom: 2px solid #f0f0f0;
+}
+
+#main #user-message dl dd {
+	color: #333;
+	display: block;
+	text-align: center;
+	line-height: 14px;
+	float: left;
+	margin: 5px 10px 10px 0;
+	padding-right: 15px;
+	border-right: 2px solid gray;
+}
+
+#user-message a {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	display: none;
+	background: url(../../img/write.gif) no-repeat;
+	background-size: auto;
+	
+}
+
+.panel-group article {
+	width: 100%;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted gray;
+}
+
+.panel-group article ol {
+	margin-bottom: 10px;
+}
+
+.panel-group article p {
+	text-indent: 50px;
+	background-color: #f5f5f5;
+	font-size: 13px;
+	line-height: 25px;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	border: 1px solid #ccc;
+	padding: 10px 20px;
+	border-radius: 4px;
+	display: block;
+	overflow: hidden;
+	height: 100px;
+	text-overflow: ellipsis;
+}
+
+.panel-group a {
+	text-decoration: none;
+}
+
+.panel-group article .article-manger {
+	height: 20px;
+}
+
+.panel-group article .article-manger span {
+	float: right;
+	margin: 0 10px;
+	color: #6a3906;
+}
+
+.panel-group .panel-collapse .panel-body {
+	padding: 0;	
+}
+
+.panel-group .panel-collapse .panel-body ul{
+	margin-bottom: 0;
+}
+
+.panel-group .panel-collapse .panel-body li{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+#answer .media 
